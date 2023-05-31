@@ -1,0 +1,18 @@
+.sign_div {
+    background-color: rgb(255, 255, 255);
+    margin-top: 40%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 5%;
+    border-radius: 40px;
+    color: rgb(8, 8, 8);
+    font-size:xx-large;
+}
+
+.sign_btn{
+    background-color: rgb(57, 157, 214)!important;
+}
+
+.home_note{
+    color: rgb(255, 255, 255);  
+}

@@ -1,0 +1,8 @@
+.home_note {
+    font-size: 1000%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 80vh;
+    color: rgba(0, 0, 0, 0.692);
+}
