@@ -23,7 +23,7 @@ function Navi_bar() {
               <Navbar.Collapse id="navbarScroll">
                 <Nav className="ms-auto" style={{ maxHeight: '100px', fontSize: "20px" }} navbarScroll>
                   
-                  <Nav.Link as={Link} to="/" className="Navbar_links" style={{ fontSize: "25px" }}>
+                  <Nav.Link as={Link} to="/sign" className="Navbar_links" style={{ fontSize: "25px" }}>
                     Home
                   </Nav.Link>
                   
@@ -32,7 +32,7 @@ function Navi_bar() {
             </Container>
           </Navbar>
           <Routes>
-            <Route path="/" element={<Sign_in />} />
+            <Route path="/sign" element={<Sign_in />} />
             <Route path="/Colombo" element={<Colombo />} />
             <Route path="/week" element={<Loon_week />} />
           </Routes>
