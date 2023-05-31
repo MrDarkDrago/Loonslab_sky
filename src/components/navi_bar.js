@@ -16,14 +16,14 @@ function Navi_bar() {
         <Router>
           <Navbar bg="light" expand="lg">
             <Container fluid className='Navbar'>
-              <Navbar.Brand as={Link} to="/Loonslab_sky" className="Navbar_links" style={{ fontSize: "35px" }}>
+              <Navbar.Brand as={Link} to="/" className="Navbar_links" style={{ fontSize: "35px" }}>
                 Loon Sky
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
                 <Nav className="ms-auto" style={{ maxHeight: '100px', fontSize: "20px" }} navbarScroll>
                   
-                  <Nav.Link as={Link} to="/sign" className="Navbar_links" style={{ fontSize: "25px" }}>
+                  <Nav.Link as={Link} to="/" className="Navbar_links" style={{ fontSize: "25px" }}>
                     Home
                   </Nav.Link>
                   
@@ -32,8 +32,7 @@ function Navi_bar() {
             </Container>
           </Navbar>
           <Routes>
-            <Route path="/Loonslab_sky" element={<Sign_in />} />
-            <Route path="/sign" element={<Sign_in />} />
+            <Route path="/" element={<Sign_in />} />
             <Route path="/Colombo" element={<Colombo />} />
             <Route path="/week" element={<Loon_week />} />
           </Routes>
