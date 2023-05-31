@@ -16,7 +16,7 @@ function Navi_bar() {
         <Router>
           <Navbar bg="light" expand="lg">
             <Container fluid className='Navbar'>
-              <Navbar.Brand as={Link} className="Navbar_links" style={{ fontSize: "35px" }}>
+              <Navbar.Brand as={Link} to="/Loonslab_sky" className="Navbar_links" style={{ fontSize: "35px" }}>
                 Loon Sky
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
@@ -32,6 +32,7 @@ function Navi_bar() {
             </Container>
           </Navbar>
           <Routes>
+            <Route path="/Loonslab_sky" element={<Sign_in />} />
             <Route path="/sign" element={<Sign_in />} />
             <Route path="/Colombo" element={<Colombo />} />
             <Route path="/week" element={<Loon_week />} />
