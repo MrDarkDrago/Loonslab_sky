@@ -32,7 +32,7 @@ function Navi_bar() {
             </Container>
           </Navbar>
           <Routes>
-            <Route path="/" element={<Sign_in />} />
+            <Route exact path="/" element={<Sign_in />} />
             <Route path="/Colombo" element={<Colombo />} />
             <Route path="/week" element={<Loon_week />} />
           </Routes>
