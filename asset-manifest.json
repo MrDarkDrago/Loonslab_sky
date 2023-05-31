@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Loonslab_sky/static/css/main.ca54451c.css",
-    "main.js": "/Loonslab_sky/static/js/main.2fb941bd.js",
+    "main.js": "/Loonslab_sky/static/js/main.b8e108d0.js",
     "static/media/Back_img.jpg": "/Loonslab_sky/static/media/Back_img.641f44f8bf8052075d7b.jpg",
     "index.html": "/Loonslab_sky/index.html",
     "main.ca54451c.css.map": "/Loonslab_sky/static/css/main.ca54451c.css.map",
-    "main.2fb941bd.js.map": "/Loonslab_sky/static/js/main.2fb941bd.js.map"
+    "main.b8e108d0.js.map": "/Loonslab_sky/static/js/main.b8e108d0.js.map"
   },
   "entrypoints": [
     "static/css/main.ca54451c.css",
-    "static/js/main.2fb941bd.js"
+    "static/js/main.b8e108d0.js"
   ]
 }
