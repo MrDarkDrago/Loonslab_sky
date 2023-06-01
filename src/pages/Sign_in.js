@@ -28,8 +28,10 @@ function Sign_in() {
   return (
     <Container>
       <Row>
-        <Col>
-          <i><h1 className='home_note'>Know Your Weather</h1></i>
+        <Col >
+          <center>
+            <i><h1 className='home_note'>Know Your Weather</h1></i>
+          </center>
         </Col>
         <Col>
           <div className='sign_div'>

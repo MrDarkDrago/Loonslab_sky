@@ -135,7 +135,7 @@ export default function Loon_week() {
                                     </button>
 
                                     <button id="btnGet" type="button" class="btn btn-primary mb-3 back" onClick={handleClickBack}>
-                                        Bsck
+                                        Back
                                     </button>
                                 </Col>
                             </div>
@@ -153,6 +153,7 @@ export default function Loon_week() {
                                 <div className="top">
                                     <div className="Date">
                                         <h3>{dt.toDateString()}</h3>
+                                        <br></br>
                                     </div>
                                     <div className="location">
                                         {locationName && <h1>{locationName}</h1>}
@@ -172,18 +173,28 @@ export default function Loon_week() {
                                 <div className="bottom">
                                     <div className="feels">
                                         {data.daily && data.daily[0] && data.daily[0].feels_like && (
-                                            <h1>{Math.round((data.daily[0].feels_like.day) - 273)}°C</h1>)}
+                                            <h3>Feels : {Math.round((data.daily[0].feels_like.day) - 273)}°C</h3>)}
 
                                     </div>
                                     <div className="humidity">
-                                        {data.daily ? <p>Humidity : {data.daily[0].humidity}</p> : null}
+                                        {data.daily ? <p>Humidity : {data.daily[0].humidity}%</p> : null}
 
                                     </div>
                                     <div className="wind">
-                                        {data.daily ? <p>Wind Speed : {data.daily[0].wind_speed}</p> : null}
+                                        {data.daily ? <p><img src="https://cdn-icons-png.flaticon.com/512/54/54298.png" width="20" height="20" alt="Winds weather symbol free icon" title="Winds weather symbol free icon"/>&nbsp; :&nbsp; {data.daily[0].wind_speed} m/s W</p> : null}
                                     </div>
                                 </div>
 
+                                <div className="icon">
+                                    <h1>
+                                        {data.daily && data.daily[0] && data.daily[0].weather && data.daily[0].weather[0] && (
+                                            <center><img
+                                                src={`https://openweathermap.org/img/wn/${data.daily[0].weather[0].icon}@2x.png`}
+                                                alt='Weather Icon'
+                                            /></center>
+                                        )}
+                                    </h1>
+                                </div>
 
 
 
@@ -198,6 +209,7 @@ export default function Loon_week() {
                                 <div className="top">
                                     <div className="Date">
                                         <h3>{dt1.toDateString()}</h3>
+                                        <br></br>
                                     </div>
                                     <div className="location">
                                         {locationName && <h1>{locationName}</h1>}
@@ -217,19 +229,28 @@ export default function Loon_week() {
                                 <div className="bottom">
                                     <div className="feels">
                                         {data.daily && data.daily[1] && data.daily[1].feels_like && (
-                                            <h1>{Math.round((data.daily[1].feels_like.day) - 273)}°C</h1>)}
+                                            <h3>Feels : {Math.round((data.daily[1].feels_like.day) - 273)}°C</h3>)}
 
                                     </div>
                                     <div className="humidity">
-                                        {data.daily ? <p>Humidity : {data.daily[1].humidity}</p> : null}
+                                        {data.daily ? <p>Humidity : {data.daily[1].humidity}%</p> : null}
 
                                     </div>
                                     <div className="wind">
-                                        {data.daily ? <p>Wind Speed : {data.daily[1].wind_speed}</p> : null}
+                                        {data.daily ? <p><img src="https://cdn-icons-png.flaticon.com/512/54/54298.png" width="20" height="20" alt="Winds weather symbol free icon" title="Winds weather symbol free icon"/>&nbsp; :&nbsp; {data.daily[1].wind_speed} m/s W</p> : null}
                                     </div>
                                 </div>
 
-
+                                <div className="icon">
+                                    <h1>
+                                        {data.daily && data.daily[1] && data.daily[1].weather && data.daily[1].weather[0] && (
+                                            <center><img
+                                                src={`https://openweathermap.org/img/wn/${data.daily[1].weather[0].icon}@2x.png`}
+                                                alt='Weather Icon'
+                                            /></center>
+                                        )}
+                                    </h1>
+                                </div>
 
 
                             </div>
@@ -243,6 +264,7 @@ export default function Loon_week() {
                                 <div className="top">
                                     <div className="Date">
                                         <h3>{dt2.toDateString()}</h3>
+                                        <br></br>
                                     </div>
                                     <div className="location">
                                         {locationName && <h1>{locationName}</h1>}
@@ -262,24 +284,33 @@ export default function Loon_week() {
                                 <div className="bottom">
                                     <div className="feels">
                                         {data.daily && data.daily[2] && data.daily[2].feels_like && (
-                                            <h1>{Math.round((data.daily[2].feels_like.day) - 273)}°C</h1>)}
+                                            <h3>Feels : {Math.round((data.daily[2].feels_like.day) - 273)}°C</h3>)}
 
                                     </div>
                                     <div className="humidity">
-                                        {data.daily ? <p>Humidity : {data.daily[2].humidity}</p> : null}
+                                        {data.daily ? <p>Humidity : {data.daily[2].humidity}%</p> : null}
 
                                     </div>
                                     <div className="wind">
-                                        {data.daily ? <p>Wind Speed : {data.daily[2].wind_speed}</p> : null}
+                                        {data.daily ? <p><img src="https://cdn-icons-png.flaticon.com/512/54/54298.png" width="20" height="20" alt="Winds weather symbol free icon" title="Winds weather symbol free icon"/>&nbsp; :&nbsp; {data.daily[2].wind_speed} m/s W</p> : null}
                                     </div>
                                 </div>
 
-
+                                <div className="icon">
+                                    <h1>
+                                        {data.daily && data.daily[2] && data.daily[2].weather && data.daily[2].weather[0] && (
+                                            <center><img
+                                                src={`https://openweathermap.org/img/wn/${data.daily[2].weather[0].icon}@2x.png`}
+                                                alt='Weather Icon'
+                                            /></center>
+                                        )}
+                                    </h1>
+                                </div>
 
 
                             </div>
                         </Card>
-                        {hidebt &&<div className='view_more'>
+                        {hidebt && <div className='view_more'>
                             <button id="btnGet" type="button" class="btn btn-primary mb-3 back" onClick={handleClickView}>
                                 View more
                             </button>
@@ -295,6 +326,7 @@ export default function Loon_week() {
                                 <div className="top">
                                     <div className="Date">
                                         <h3>{dt3.toDateString()}</h3>
+                                        <br></br>
                                     </div>
                                     <div className="location">
                                         {locationName && <h1>{locationName}</h1>}
@@ -314,19 +346,28 @@ export default function Loon_week() {
                                 <div className="bottom">
                                     <div className="feels">
                                         {data.daily && data.daily[3] && data.daily[3].feels_like && (
-                                            <h1>{Math.round((data.daily[3].feels_like.day) - 273)}°C</h1>)}
+                                            <h3>Feels : {Math.round((data.daily[3].feels_like.day) - 273)}°C</h3>)}
 
                                     </div>
                                     <div className="humidity">
-                                        {data.daily ? <p>Humidity : {data.daily[3].humidity}</p> : null}
+                                        {data.daily ? <p>Humidity : {data.daily[3].humidity}%</p> : null}
 
                                     </div>
                                     <div className="wind">
-                                        {data.daily ? <p>Wind Speed : {data.daily[3].wind_speed}</p> : null}
+                                        {data.daily ? <p><img src="https://cdn-icons-png.flaticon.com/512/54/54298.png" width="20" height="20" alt="Winds weather symbol free icon" title="Winds weather symbol free icon"/>&nbsp; :&nbsp; {data.daily[3].wind_speed} m/s W</p> : null}
                                     </div>
                                 </div>
 
-
+                                <div className="icon">
+                                    <h1>
+                                        {data.daily && data.daily[3] && data.daily[3].weather && data.daily[3].weather[0] && (
+                                            <center><img
+                                                src={`https://openweathermap.org/img/wn/${data.daily[3].weather[0].icon}@2x.png`}
+                                                alt='Weather Icon'
+                                            /></center>
+                                        )}
+                                    </h1>
+                                </div>
 
 
                             </div>
@@ -341,6 +382,7 @@ export default function Loon_week() {
                                 <div className="top">
                                     <div className="Date">
                                         <h3>{dt4.toDateString()}</h3>
+                                        <br></br>
                                     </div>
                                     <div className="location">
                                         {locationName && <h1>{locationName}</h1>}
@@ -360,19 +402,28 @@ export default function Loon_week() {
                                 <div className="bottom">
                                     <div className="feels">
                                         {data.daily && data.daily[4] && data.daily[4].feels_like && (
-                                            <h1>{Math.round((data.daily[4].feels_like.day) - 273)}°C</h1>)}
+                                            <h3>Feels : {Math.round((data.daily[4].feels_like.day) - 273)}°C</h3>)}
 
                                     </div>
                                     <div className="humidity">
-                                        {data.daily ? <p>Humidity : {data.daily[4].humidity}</p> : null}
+                                        {data.daily ? <p>Humidity : {data.daily[4].humidity}%</p> : null}
 
                                     </div>
                                     <div className="wind">
-                                        {data.daily ? <p>Wind Speed : {data.daily[4].wind_speed}</p> : null}
+                                        {data.daily ? <p><img src="https://cdn-icons-png.flaticon.com/512/54/54298.png" width="20" height="20" alt="Winds weather symbol free icon" title="Winds weather symbol free icon"/>&nbsp; :&nbsp; {data.daily[4].wind_speed} m/s W</p> : null}
                                     </div>
                                 </div>
 
-
+                                <div className="icon">
+                                    <h1>
+                                        {data.daily && data.daily[4] && data.daily[4].weather && data.daily[4].weather[0] && (
+                                            <center><img
+                                                src={`https://openweathermap.org/img/wn/${data.daily[4].weather[0].icon}@2x.png`}
+                                                alt='Weather Icon'
+                                            /></center>
+                                        )}
+                                    </h1>
+                                </div>  
 
 
                             </div>
@@ -385,6 +436,7 @@ export default function Loon_week() {
                                 <div className="top">
                                     <div className="Date">
                                         <h3>{dt5.toDateString()}</h3>
+                                        <br></br>
                                     </div>
                                     <div className="location">
                                         {locationName && <h1>{locationName}</h1>}
@@ -404,19 +456,28 @@ export default function Loon_week() {
                                 <div className="bottom">
                                     <div className="feels">
                                         {data.daily && data.daily[5] && data.daily[5].feels_like && (
-                                            <h1>{Math.round((data.daily[5].feels_like.day) - 273)}°C</h1>)}
+                                            <h3>Feels : {Math.round((data.daily[5].feels_like.day) - 273)}°C</h3>)}
 
                                     </div>
                                     <div className="humidity">
-                                        {data.daily ? <p>Humidity : {data.daily[5].humidity}</p> : null}
+                                        {data.daily ? <p>Humidity : {data.daily[5].humidity}%</p> : null}
 
                                     </div>
                                     <div className="wind">
-                                        {data.daily ? <p>Wind Speed : {data.daily[5].wind_speed}</p> : null}
+                                        {data.daily ? <p><img src="https://cdn-icons-png.flaticon.com/512/54/54298.png" width="20" height="20" alt="Winds weather symbol free icon" title="Winds weather symbol free icon"/>&nbsp; :&nbsp; {data.daily[5].wind_speed} m/s W</p> : null}
                                     </div>
                                 </div>
 
-
+                                <div className="icon">
+                                    <h1>
+                                        {data.daily && data.daily[5] && data.daily[5].weather && data.daily[5].weather[0] && (
+                                            <center><img
+                                                src={`https://openweathermap.org/img/wn/${data.daily[5].weather[0].icon}@2x.png`}
+                                                alt='Weather Icon'
+                                            /></center>
+                                        )}
+                                    </h1>
+                                </div>
 
 
                             </div>
@@ -429,38 +490,48 @@ export default function Loon_week() {
                                 <div className="top">
                                     <div className="Date">
                                         <h3>{dt6.toDateString()}</h3>
+                                        <br></br>
                                     </div>
                                     <div className="location">
                                         {locationName && <h1>{locationName}</h1>}
                                     </div>
                                     <div className="temp">
-                                        {data.daily && data.daily[5] && data.daily[5].temp && (
-                                            <h1>{Math.round((data.daily[5].temp.day) - 273)}°C</h1>
+                                        {data.daily && data.daily[6] && data.daily[5].temp && (
+                                            <h1>{Math.round((data.daily[6].temp.day) - 273)}°C</h1>
                                         )}
                                     </div>
                                     <div className="description">
-                                        {data.daily && data.daily[5] && data.daily[5].weather && data.daily[5].weather[0] && (
-                                            <h2>{data.daily[5].weather[0].description}</h2>)}
+                                        {data.daily && data.daily[5] && data.daily[5].weather && data.daily[6].weather[0] && (
+                                            <h2>{data.daily[6].weather[0].description}</h2>)}
                                     </div>
                                 </div>
 
 
                                 <div className="bottom">
                                     <div className="feels">
-                                        {data.daily && data.daily[5] && data.daily[5].feels_like && (
-                                            <h1>{Math.round((data.daily[5].feels_like.day) - 273)}°C</h1>)}
+                                        {data.daily && data.daily[6] && data.daily[6].feels_like && (
+                                            <h3>Feels : {Math.round((data.daily[6].feels_like.day) - 273)}°C</h3>)}
 
                                     </div>
                                     <div className="humidity">
-                                        {data.daily ? <p>Humidity : {data.daily[5].humidity}</p> : null}
+                                        {data.daily ? <p>Humidity : {data.daily[6].humidity}%</p> : null}
 
                                     </div>
                                     <div className="wind">
-                                        {data.daily ? <p>Wind Speed : {data.daily[5].wind_speed}</p> : null}
+                                        {data.daily ? <p><img src="https://cdn-icons-png.flaticon.com/512/54/54298.png" width="20" height="20" alt="Winds weather symbol free icon" title="Winds weather symbol free icon"/>&nbsp; :&nbsp; {data.daily[6].wind_speed} m/s W</p> : null}
                                     </div>
                                 </div>
 
-
+                                <div className="icon">
+                                    <h1>
+                                        {data.daily && data.daily[6] && data.daily[6].weather && data.daily[6].weather[0] && (
+                                            <center><img
+                                                src={`https://openweathermap.org/img/wn/${data.daily[6].weather[0].icon}@2x.png`}
+                                                alt='Weather Icon'
+                                            /></center>
+                                        )}
+                                    </h1>
+                                </div>
 
 
                             </div>

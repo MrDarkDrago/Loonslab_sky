@@ -9,18 +9,11 @@ import Loon_week from './pages/loon_week';
 
 function App() {
   return (
-    <>
+    <div>
       <Navi_bar />
       <BackgroundImage />
-      <Router>
-        <Routes>
-          <Route exact path="/Loonslab_sky/" element={<Sign_in />} />
-          <Route path="/" element={<Sign_in />} />
-          <Route path="/Colombo" element={<Colombo />} />
-          <Route path="/week" element={<Loon_week />} />
-        </Routes>
-      </Router>
-    </>
+    </div>
+
   );
 }
 

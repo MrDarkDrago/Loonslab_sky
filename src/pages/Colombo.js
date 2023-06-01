@@ -34,8 +34,8 @@ export default function Colombo() {
     //Goto weekpage
     function handleButton() {
         navigate('/week');
-    
-      }
+
+    }
 
 
     return (
@@ -87,16 +87,22 @@ export default function Colombo() {
                                     </h1>
                                 </div>
                             </Col>
-                            <Row>
-                                <Col>
-                                    <Button variant="primary" type="submit" className='sign_btn' onClick={handleButton}>
-                                        Search
-                                    </Button>
-                                </Col>
-                            </Row>
+
                         </Row>
                     </div>
+
                     <Col></Col>
+                    <Row>
+                        <Col></Col>
+                        <Col className='colombo_col'>
+                            <center>
+                                <Button variant="primary" type="submit" className='sign_btn' onClick={handleButton}>
+                                    Search
+                                </Button>
+                            </center>
+                        </Col>
+                        <Col></Col>
+                    </Row>
                 </Row>
 
 

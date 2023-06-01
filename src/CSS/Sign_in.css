@@ -1,12 +1,12 @@
 .sign_div {
-    background-color: rgb(255, 255, 255);
-    margin-top: 40%;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 5%;
-    border-radius: 40px;
-    color: rgb(8, 8, 8);
-    font-size:xx-large;
+    background-color: rgb(255, 255, 255)!important;
+    margin-top: 40%!important;
+    margin-left: 25%!important;
+    margin-right: 25%!important;
+    padding: 5%!important;
+    border-radius: 40px!important;
+    color: rgb(8, 8, 8)!important;
+    font-size:xx-large!important;
 }
 
 .sign_btn{
@@ -14,5 +14,10 @@
 }
 
 .home_note{
-    color: rgb(255, 255, 255);  
+    display: flex;
+    align-items: center!important;
+    justify-content: center!important; /* Center horizontally */
+    height: 80vh!important;
+    font-size: 800%;
+    color: rgb(255, 255, 255)!important;  
 }

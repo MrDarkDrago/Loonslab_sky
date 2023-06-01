@@ -9,9 +9,15 @@
 
 .colombo{
     margin-top: 15%!important;
-    background-color: rgba(71, 73, 75, 0.651)!important;
-    color: aliceblue!important;
+    background-color: rgba(226, 222, 201, 0.808)!important;
     max-width:max-content!important;
     border-radius: 20px!important;
+    padding: 2%;
     padding-bottom: 2%!important;
+    padding-left: 3%!important;
+    padding-right: 3%!important;
+}
+
+.colombo_col{
+    padding-top:1%!important;
 }
